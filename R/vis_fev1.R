@@ -31,7 +31,7 @@ fev1_sampled
 # Build a plot that shows the relationship between FEV1 and age
 
 fev1_plot <- ggplot(data = fev1_sampled, 
-                    aes(x = age, y = fev1)) +
+                    aes(x = age, y = FEV1)) +
     geom_point()
 
 fev1_plot
@@ -39,6 +39,12 @@ fev1_plot
 # Activity 6 - Improving the plot
 
 # Add meaningful labels for the $x$ and $y$ axes, including units, and change the plot's colour theme from the default.
+
+fev1_plot <- fev1_plot + labs(title = "Correlation between lung function and age",
+                              x = "age", 
+                              y = "Spirometry measurement of lung function (litres)") + geom_point(color = "red")
+
+fev1_plot
 
 # Add a smooth line of best fit to the plot. 
 
