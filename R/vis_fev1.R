@@ -42,7 +42,8 @@ fev1_plot
 
 fev1_plot <- fev1_plot + labs(title = "Correlation between lung function and age",
                               x = "age", 
-                              y = "Spirometry measurement of lung function (litres)") + geom_point(color = "red")
+                              y = "Spirometry measurement of lung function (litres)") 
+                                + geom_point(aes(color = "red", shape = 21))
 
 fev1_plot
 
@@ -59,10 +60,19 @@ fev1_plot
 
 # Determine a way to highlight which observations belong to the same individual in your plot
 
+summary(fev1)
+dev.off()
+fev1_plot <- fev1_plot + geom_point(aes(fill = factor(id)),
+                                    shape = 21,
+                                    color = 'black') +
+                scale_fill_brewer(palette = "Greens",
+                name = 'id')
+fev1_plot
 
 # Activity 7b - How many observations per individual?
 
 # Count the number of times that each `id` is measured and make a bar plot 
+
 
 
 # Activity 7c - Incorporating height
