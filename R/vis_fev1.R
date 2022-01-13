@@ -48,6 +48,10 @@ fev1_plot
 
 # Add a smooth line of best fit to the plot. 
 
+fev1_plot <- fev1_plot + geom_smooth()
+
+fev1_plot 
+
 
 # Activity 7
 
