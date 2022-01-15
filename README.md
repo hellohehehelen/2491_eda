@@ -24,3 +24,5 @@ Data are originally from [Dockery et al. (1983)](https://doi.org/10.1164/arrd.19
 This data, and script file(s), are provided for students in the MSc in Health Data Science module **2491 - Data Challenge** for the purposes of learning exploratory data analysis.
 
 Tom was here!!!!!
+
+15th January 2022: Tom is editing this after opening the cloned repository file in Explorer with Ctrl Shift F
